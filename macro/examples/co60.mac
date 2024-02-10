@@ -1,0 +1,16 @@
+################################
+# 60Co
+################################
+
+/run/initialize
+
+/gps/particle ion
+/gps/ion 27 60 0 0
+/gps/position 0 0 -1 cm
+/gps/energy 0 keV
+/gps/ang/type iso
+
+/analysis/setFileName co60.root
+/run/printProgress 1000000
+/run/beamOn 200000000
+
