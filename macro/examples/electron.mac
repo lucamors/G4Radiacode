@@ -1,0 +1,13 @@
+#
+# Gamma 
+################################
+
+/run/initialize
+
+/gps/particle gamma
+/gps/position 0 0 -5 cm
+/gps/energy 661.5 keV
+/gps/ang/type iso
+/analysis/setFileName csgamma.root
+/run/printProgress 1000
+/run/beamOn 100000000
