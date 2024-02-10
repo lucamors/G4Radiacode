@@ -1,16 +1,17 @@
-# TEPC Detector
+# Radiacode Digital Twin
 
-A Geant4 implamentation of a Tissue Equivalent Proportional Counter (TEPC).
+## Introduction
 
-Based on : The   microdosimetric   extension   in   TOPAS:   Development   and comparison with publisheddata Zhu et al. 2019
+A Geant4 implamentation of the scintillator crystal inside the Radiacode detector.
 
-<img width="500" src="docs/tepc.svg" alt>
-<em>Visualization of 50 events from a <sup>12</sup>C beam at 300 MeV/u. Spherical TEPC Geometry.</em>
+### Prerequisites
 
-<img width="500" src="docs/tepccy.svg" alt>
-<em>Mini TEPC with Cylindrical Geometry.</em>
+> [!WARNING]  
+> In order to correctly compile this application you need both the Geant4 libraries (v. 4.11.2) and the ROOT libraries already installed on your system. 
 
-## Installation
+A few lines on installation
+
+### Compile the application
 
 Clone the repository using :
 ```bash
@@ -23,13 +24,7 @@ Now create a build directory inside the ```G4Radiacode``` directory:
 mkdir build && cd build
 ```
 
-Launch cmake with the geometry of choice :
-
-1. For spherical geometry:
-```bash
-cmake -DSPHERICAL_GEOMETRY=ON ..
-```
-2. For cylindrical geometry:
+Launch CMake :
 ```bash
 cmake ..
 ```
@@ -39,10 +34,10 @@ Finally you can build the application (using <N> core):
 make -j<N>
 ```
 
-## Usage
+### Usage
 
 The ```G4RadiacodePrimaryGenerator``` is built around the use of ```G4GeneralParticleSource``` (i.e. GPS)
-and example for a <sup>12</sup>C beam with 300 MeV/u can be found in:
+and example for a <sup>60</sup>Co source you can use:
 ```bash
-macro/examples/C12.mac
+macro/examples/co60.mac
 ```
