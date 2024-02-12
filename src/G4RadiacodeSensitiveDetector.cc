@@ -2,6 +2,7 @@
 #include "G4Step.hh"
 #include "G4SDManager.hh"
 #include "G4HCofThisEvent.hh"
+#include <string>
 
 G4RadiacodeSensitiveDetector::G4RadiacodeSensitiveDetector()
 : G4VSensitiveDetector("det"), fHitsCollection(nullptr){}
@@ -44,10 +45,12 @@ G4bool G4RadiacodeSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistor
 	G4RadiacodeHit * hit = new G4RadiacodeHit();
 	G4double edep = step->GetTotalEnergyDeposit()/CLHEP::keV;
 
+	std::string pname = step->GetTrack()->GetCreatorModelName();
 
 	if(edep > 0)
 	{
 		hit->SetEdep(edep);
+		hit->SetProcessName(pname);
 		fHitsCollection->insert(hit);
 	}
 

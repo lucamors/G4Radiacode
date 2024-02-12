@@ -7,9 +7,9 @@
 
 /gps/particle ion
 /gps/ion 55 137 0 0
-/gps/position 0 0 -5 cm
+/gps/position 0 0 -2 cm
 /gps/energy 0 keV
 /gps/ang/type iso
 /analysis/setFileName cs137.root
-/run/printProgress 10000000
-/run/beamOn 200000000
+/run/printProgress 1000000
+/run/beamOn 100000000

@@ -14,6 +14,7 @@
 // CGS Geometry Classes
 #include "G4Box.hh"
 #include "G4Tubs.hh"
+#include "G4Sphere.hh"
 
 // Visualization Libraries
 #include "G4Colour.hh"
@@ -38,12 +39,13 @@ G4VPhysicalVolume* G4RadiacodeDetectorConstruction::Construct()
 
   G4Material * material_Air     = nist->FindOrBuildMaterial("G4_AIR");
   G4Material * material_CsI     = nist->FindOrBuildMaterial("G4_CESIUM_IODIDE");
+  G4Material * material_Plexi   = nist->FindOrBuildMaterial("G4_PLEXIGLASS");
   
   G4Element * elC  = new G4Element("Carbon", "C", 6, 12.011*g/mole);
   G4Element * elH  = new G4Element("Hydrogen", "H", 1, 1.008*g/mole);
   G4Element * elO  = new G4Element("Oxygen", "O", 8, 15.999*g/mole);
 
-  G4double density = 0.4021 * g / cm3;
+  G4double density = 1.25 * g / cm3;
   G4int nComponents = 3;
   G4Material * materialPLA = new G4Material("PLA", density, nComponents);
   materialPLA->AddElement(elC, 3);
@@ -151,6 +153,37 @@ G4VPhysicalVolume* G4RadiacodeDetectorConstruction::Construct()
                     0,
                     true);
 
+
+  /////////////////////////////////////////////////////////////////////////////
+  // Source Enclosure
+  /////////////////////////////////////////////////////////////////////////////
+  G4double source_enclosure_radius = 1*mm;
+
+  G4Sphere * solid_source_enclosure = new G4Sphere("solid_source_enclosure",
+                                                   0,
+                                                   source_enclosure_radius,
+                                                   0,
+                                                   2*M_PI*rad,
+                                                   0,
+                                                   M_PI*rad
+                                                  );
+
+  G4LogicalVolume* logical_source_enclosure = new G4LogicalVolume(solid_source_enclosure,
+                                                         material_Plexi,
+                                                         "logical_source_enclosure",
+                                                         0,
+                                                         0,
+                                                         0,
+                                                         true);
+
+  new G4PVPlacement(0,
+                    G4ThreeVector(0,0,-2*cm),
+                    logical_source_enclosure,
+                    "physical_enclosure",
+                    logical_World,
+                    false,
+                    0,
+                    true);
   /////////////////////////////////////////////////////////////////////////////
   // Visualization Attributes
   /////////////////////////////////////////////////////////////////////////////
