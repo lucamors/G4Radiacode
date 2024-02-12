@@ -13,8 +13,8 @@ project(G4Radiacode)
 set(
   G4Radiacode
   macro/vis/initialize_visualization.mac
-  macro/examples/C12.mac
-  macro/examples/electron.mac
+  macro/examples/gamma.mac
+  macro/examples/characteristic.mac
   macro/examples/co60.mac
   macro/examples/cs137.mac
 )

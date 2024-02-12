@@ -21,7 +21,12 @@ G4ClassificationOfNewTrack G4RadiacodeStackingAction::ClassifyNewTrack(const G4T
     if (track->GetDefinition() == G4AntiNeutrinoE::AntiNeutrinoE())
     {
         return fKill;
-    }
+    }   
+
+    // G4cout << track->GetDefinition()->GetParticleName() 
+    //        << " " 
+    //        << track->GetCreatorModelName()
+    //        << G4endl;
 
     return fUrgent;
 }

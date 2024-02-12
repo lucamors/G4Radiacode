@@ -1,0 +1,812 @@
+#
+# Characteristic Intrinsic Efficiency
+######################################
+
+
+/run/initialize
+
+/gps/particle gamma
+/gps/position 0 0 -2.5 cm
+/gps/ang/type iso
+/gps/ang/mintheta 165.9637 deg
+    
+/gps/energy 10 keV
+/analysis/setFileName chr_10_keV.root
+/run/beamOn 1000000
+
+/gps/energy 20 keV
+/analysis/setFileName chr_20_keV.root
+/run/beamOn 1000000
+
+/gps/energy 30 keV
+/analysis/setFileName chr_30_keV.root
+/run/beamOn 1000000
+
+/gps/energy 40 keV
+/analysis/setFileName chr_40_keV.root
+/run/beamOn 1000000
+
+/gps/energy 50 keV
+/analysis/setFileName chr_50_keV.root
+/run/beamOn 1000000
+
+/gps/energy 60 keV
+/analysis/setFileName chr_60_keV.root
+/run/beamOn 1000000
+
+/gps/energy 70 keV
+/analysis/setFileName chr_70_keV.root
+/run/beamOn 1000000
+
+/gps/energy 80 keV
+/analysis/setFileName chr_80_keV.root
+/run/beamOn 1000000
+
+/gps/energy 90 keV
+/analysis/setFileName chr_90_keV.root
+/run/beamOn 1000000
+
+/gps/energy 100 keV
+/analysis/setFileName chr_100_keV.root
+/run/beamOn 1000000
+
+/gps/energy 110 keV
+/analysis/setFileName chr_110_keV.root
+/run/beamOn 1000000
+
+/gps/energy 120 keV
+/analysis/setFileName chr_120_keV.root
+/run/beamOn 1000000
+
+/gps/energy 130 keV
+/analysis/setFileName chr_130_keV.root
+/run/beamOn 1000000
+
+/gps/energy 140 keV
+/analysis/setFileName chr_140_keV.root
+/run/beamOn 1000000
+
+/gps/energy 150 keV
+/analysis/setFileName chr_150_keV.root
+/run/beamOn 1000000
+
+/gps/energy 160 keV
+/analysis/setFileName chr_160_keV.root
+/run/beamOn 1000000
+
+/gps/energy 170 keV
+/analysis/setFileName chr_170_keV.root
+/run/beamOn 1000000
+
+/gps/energy 180 keV
+/analysis/setFileName chr_180_keV.root
+/run/beamOn 1000000
+
+/gps/energy 190 keV
+/analysis/setFileName chr_190_keV.root
+/run/beamOn 1000000
+
+/gps/energy 200 keV
+/analysis/setFileName chr_200_keV.root
+/run/beamOn 1000000
+
+/gps/energy 210 keV
+/analysis/setFileName chr_210_keV.root
+/run/beamOn 1000000
+
+/gps/energy 220 keV
+/analysis/setFileName chr_220_keV.root
+/run/beamOn 1000000
+
+/gps/energy 230 keV
+/analysis/setFileName chr_230_keV.root
+/run/beamOn 1000000
+
+/gps/energy 240 keV
+/analysis/setFileName chr_240_keV.root
+/run/beamOn 1000000
+
+/gps/energy 250 keV
+/analysis/setFileName chr_250_keV.root
+/run/beamOn 1000000
+
+/gps/energy 260 keV
+/analysis/setFileName chr_260_keV.root
+/run/beamOn 1000000
+
+/gps/energy 270 keV
+/analysis/setFileName chr_270_keV.root
+/run/beamOn 1000000
+
+/gps/energy 280 keV
+/analysis/setFileName chr_280_keV.root
+/run/beamOn 1000000
+
+/gps/energy 290 keV
+/analysis/setFileName chr_290_keV.root
+/run/beamOn 1000000
+
+/gps/energy 300 keV
+/analysis/setFileName chr_300_keV.root
+/run/beamOn 1000000
+
+/gps/energy 310 keV
+/analysis/setFileName chr_310_keV.root
+/run/beamOn 1000000
+
+/gps/energy 320 keV
+/analysis/setFileName chr_320_keV.root
+/run/beamOn 1000000
+
+/gps/energy 330 keV
+/analysis/setFileName chr_330_keV.root
+/run/beamOn 1000000
+
+/gps/energy 340 keV
+/analysis/setFileName chr_340_keV.root
+/run/beamOn 1000000
+
+/gps/energy 350 keV
+/analysis/setFileName chr_350_keV.root
+/run/beamOn 1000000
+
+/gps/energy 360 keV
+/analysis/setFileName chr_360_keV.root
+/run/beamOn 1000000
+
+/gps/energy 370 keV
+/analysis/setFileName chr_370_keV.root
+/run/beamOn 1000000
+
+/gps/energy 380 keV
+/analysis/setFileName chr_380_keV.root
+/run/beamOn 1000000
+
+/gps/energy 390 keV
+/analysis/setFileName chr_390_keV.root
+/run/beamOn 1000000
+
+/gps/energy 400 keV
+/analysis/setFileName chr_400_keV.root
+/run/beamOn 1000000
+
+/gps/energy 410 keV
+/analysis/setFileName chr_410_keV.root
+/run/beamOn 1000000
+
+/gps/energy 420 keV
+/analysis/setFileName chr_420_keV.root
+/run/beamOn 1000000
+
+/gps/energy 430 keV
+/analysis/setFileName chr_430_keV.root
+/run/beamOn 1000000
+
+/gps/energy 440 keV
+/analysis/setFileName chr_440_keV.root
+/run/beamOn 1000000
+
+/gps/energy 450 keV
+/analysis/setFileName chr_450_keV.root
+/run/beamOn 1000000
+
+/gps/energy 460 keV
+/analysis/setFileName chr_460_keV.root
+/run/beamOn 1000000
+
+/gps/energy 470 keV
+/analysis/setFileName chr_470_keV.root
+/run/beamOn 1000000
+
+/gps/energy 480 keV
+/analysis/setFileName chr_480_keV.root
+/run/beamOn 1000000
+
+/gps/energy 490 keV
+/analysis/setFileName chr_490_keV.root
+/run/beamOn 1000000
+
+/gps/energy 500 keV
+/analysis/setFileName chr_500_keV.root
+/run/beamOn 1000000
+
+/gps/energy 510 keV
+/analysis/setFileName chr_510_keV.root
+/run/beamOn 1000000
+
+/gps/energy 520 keV
+/analysis/setFileName chr_520_keV.root
+/run/beamOn 1000000
+
+/gps/energy 530 keV
+/analysis/setFileName chr_530_keV.root
+/run/beamOn 1000000
+
+/gps/energy 540 keV
+/analysis/setFileName chr_540_keV.root
+/run/beamOn 1000000
+
+/gps/energy 550 keV
+/analysis/setFileName chr_550_keV.root
+/run/beamOn 1000000
+
+/gps/energy 560 keV
+/analysis/setFileName chr_560_keV.root
+/run/beamOn 1000000
+
+/gps/energy 570 keV
+/analysis/setFileName chr_570_keV.root
+/run/beamOn 1000000
+
+/gps/energy 580 keV
+/analysis/setFileName chr_580_keV.root
+/run/beamOn 1000000
+
+/gps/energy 590 keV
+/analysis/setFileName chr_590_keV.root
+/run/beamOn 1000000
+
+/gps/energy 600 keV
+/analysis/setFileName chr_600_keV.root
+/run/beamOn 1000000
+
+/gps/energy 610 keV
+/analysis/setFileName chr_610_keV.root
+/run/beamOn 1000000
+
+/gps/energy 620 keV
+/analysis/setFileName chr_620_keV.root
+/run/beamOn 1000000
+
+/gps/energy 630 keV
+/analysis/setFileName chr_630_keV.root
+/run/beamOn 1000000
+
+/gps/energy 640 keV
+/analysis/setFileName chr_640_keV.root
+/run/beamOn 1000000
+
+/gps/energy 650 keV
+/analysis/setFileName chr_650_keV.root
+/run/beamOn 1000000
+
+/gps/energy 660 keV
+/analysis/setFileName chr_660_keV.root
+/run/beamOn 1000000
+
+/gps/energy 670 keV
+/analysis/setFileName chr_670_keV.root
+/run/beamOn 1000000
+
+/gps/energy 680 keV
+/analysis/setFileName chr_680_keV.root
+/run/beamOn 1000000
+
+/gps/energy 690 keV
+/analysis/setFileName chr_690_keV.root
+/run/beamOn 1000000
+
+/gps/energy 700 keV
+/analysis/setFileName chr_700_keV.root
+/run/beamOn 1000000
+
+/gps/energy 710 keV
+/analysis/setFileName chr_710_keV.root
+/run/beamOn 1000000
+
+/gps/energy 720 keV
+/analysis/setFileName chr_720_keV.root
+/run/beamOn 1000000
+
+/gps/energy 730 keV
+/analysis/setFileName chr_730_keV.root
+/run/beamOn 1000000
+
+/gps/energy 740 keV
+/analysis/setFileName chr_740_keV.root
+/run/beamOn 1000000
+
+/gps/energy 750 keV
+/analysis/setFileName chr_750_keV.root
+/run/beamOn 1000000
+
+/gps/energy 760 keV
+/analysis/setFileName chr_760_keV.root
+/run/beamOn 1000000
+
+/gps/energy 770 keV
+/analysis/setFileName chr_770_keV.root
+/run/beamOn 1000000
+
+/gps/energy 780 keV
+/analysis/setFileName chr_780_keV.root
+/run/beamOn 1000000
+
+/gps/energy 790 keV
+/analysis/setFileName chr_790_keV.root
+/run/beamOn 1000000
+
+/gps/energy 800 keV
+/analysis/setFileName chr_800_keV.root
+/run/beamOn 1000000
+
+/gps/energy 810 keV
+/analysis/setFileName chr_810_keV.root
+/run/beamOn 1000000
+
+/gps/energy 820 keV
+/analysis/setFileName chr_820_keV.root
+/run/beamOn 1000000
+
+/gps/energy 830 keV
+/analysis/setFileName chr_830_keV.root
+/run/beamOn 1000000
+
+/gps/energy 840 keV
+/analysis/setFileName chr_840_keV.root
+/run/beamOn 1000000
+
+/gps/energy 850 keV
+/analysis/setFileName chr_850_keV.root
+/run/beamOn 1000000
+
+/gps/energy 860 keV
+/analysis/setFileName chr_860_keV.root
+/run/beamOn 1000000
+
+/gps/energy 870 keV
+/analysis/setFileName chr_870_keV.root
+/run/beamOn 1000000
+
+/gps/energy 880 keV
+/analysis/setFileName chr_880_keV.root
+/run/beamOn 1000000
+
+/gps/energy 890 keV
+/analysis/setFileName chr_890_keV.root
+/run/beamOn 1000000
+
+/gps/energy 900 keV
+/analysis/setFileName chr_900_keV.root
+/run/beamOn 1000000
+
+/gps/energy 910 keV
+/analysis/setFileName chr_910_keV.root
+/run/beamOn 1000000
+
+/gps/energy 920 keV
+/analysis/setFileName chr_920_keV.root
+/run/beamOn 1000000
+
+/gps/energy 930 keV
+/analysis/setFileName chr_930_keV.root
+/run/beamOn 1000000
+
+/gps/energy 940 keV
+/analysis/setFileName chr_940_keV.root
+/run/beamOn 1000000
+
+/gps/energy 950 keV
+/analysis/setFileName chr_950_keV.root
+/run/beamOn 1000000
+
+/gps/energy 960 keV
+/analysis/setFileName chr_960_keV.root
+/run/beamOn 1000000
+
+/gps/energy 970 keV
+/analysis/setFileName chr_970_keV.root
+/run/beamOn 1000000
+
+/gps/energy 980 keV
+/analysis/setFileName chr_980_keV.root
+/run/beamOn 1000000
+
+/gps/energy 990 keV
+/analysis/setFileName chr_990_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1000 keV
+/analysis/setFileName chr_1000_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1010 keV
+/analysis/setFileName chr_1010_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1020 keV
+/analysis/setFileName chr_1020_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1030 keV
+/analysis/setFileName chr_1030_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1040 keV
+/analysis/setFileName chr_1040_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1050 keV
+/analysis/setFileName chr_1050_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1060 keV
+/analysis/setFileName chr_1060_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1070 keV
+/analysis/setFileName chr_1070_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1080 keV
+/analysis/setFileName chr_1080_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1090 keV
+/analysis/setFileName chr_1090_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1100 keV
+/analysis/setFileName chr_1100_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1110 keV
+/analysis/setFileName chr_1110_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1120 keV
+/analysis/setFileName chr_1120_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1130 keV
+/analysis/setFileName chr_1130_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1140 keV
+/analysis/setFileName chr_1140_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1150 keV
+/analysis/setFileName chr_1150_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1160 keV
+/analysis/setFileName chr_1160_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1170 keV
+/analysis/setFileName chr_1170_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1180 keV
+/analysis/setFileName chr_1180_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1190 keV
+/analysis/setFileName chr_1190_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1200 keV
+/analysis/setFileName chr_1200_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1210 keV
+/analysis/setFileName chr_1210_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1220 keV
+/analysis/setFileName chr_1220_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1230 keV
+/analysis/setFileName chr_1230_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1240 keV
+/analysis/setFileName chr_1240_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1250 keV
+/analysis/setFileName chr_1250_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1260 keV
+/analysis/setFileName chr_1260_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1270 keV
+/analysis/setFileName chr_1270_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1280 keV
+/analysis/setFileName chr_1280_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1290 keV
+/analysis/setFileName chr_1290_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1300 keV
+/analysis/setFileName chr_1300_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1310 keV
+/analysis/setFileName chr_1310_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1320 keV
+/analysis/setFileName chr_1320_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1330 keV
+/analysis/setFileName chr_1330_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1340 keV
+/analysis/setFileName chr_1340_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1350 keV
+/analysis/setFileName chr_1350_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1360 keV
+/analysis/setFileName chr_1360_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1370 keV
+/analysis/setFileName chr_1370_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1380 keV
+/analysis/setFileName chr_1380_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1390 keV
+/analysis/setFileName chr_1390_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1400 keV
+/analysis/setFileName chr_1400_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1410 keV
+/analysis/setFileName chr_1410_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1420 keV
+/analysis/setFileName chr_1420_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1430 keV
+/analysis/setFileName chr_1430_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1440 keV
+/analysis/setFileName chr_1440_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1450 keV
+/analysis/setFileName chr_1450_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1460 keV
+/analysis/setFileName chr_1460_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1470 keV
+/analysis/setFileName chr_1470_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1480 keV
+/analysis/setFileName chr_1480_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1490 keV
+/analysis/setFileName chr_1490_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1500 keV
+/analysis/setFileName chr_1500_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1510 keV
+/analysis/setFileName chr_1510_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1520 keV
+/analysis/setFileName chr_1520_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1530 keV
+/analysis/setFileName chr_1530_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1540 keV
+/analysis/setFileName chr_1540_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1550 keV
+/analysis/setFileName chr_1550_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1560 keV
+/analysis/setFileName chr_1560_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1570 keV
+/analysis/setFileName chr_1570_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1580 keV
+/analysis/setFileName chr_1580_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1590 keV
+/analysis/setFileName chr_1590_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1600 keV
+/analysis/setFileName chr_1600_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1610 keV
+/analysis/setFileName chr_1610_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1620 keV
+/analysis/setFileName chr_1620_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1630 keV
+/analysis/setFileName chr_1630_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1640 keV
+/analysis/setFileName chr_1640_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1650 keV
+/analysis/setFileName chr_1650_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1660 keV
+/analysis/setFileName chr_1660_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1670 keV
+/analysis/setFileName chr_1670_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1680 keV
+/analysis/setFileName chr_1680_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1690 keV
+/analysis/setFileName chr_1690_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1700 keV
+/analysis/setFileName chr_1700_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1710 keV
+/analysis/setFileName chr_1710_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1720 keV
+/analysis/setFileName chr_1720_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1730 keV
+/analysis/setFileName chr_1730_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1740 keV
+/analysis/setFileName chr_1740_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1750 keV
+/analysis/setFileName chr_1750_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1760 keV
+/analysis/setFileName chr_1760_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1770 keV
+/analysis/setFileName chr_1770_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1780 keV
+/analysis/setFileName chr_1780_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1790 keV
+/analysis/setFileName chr_1790_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1800 keV
+/analysis/setFileName chr_1800_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1810 keV
+/analysis/setFileName chr_1810_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1820 keV
+/analysis/setFileName chr_1820_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1830 keV
+/analysis/setFileName chr_1830_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1840 keV
+/analysis/setFileName chr_1840_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1850 keV
+/analysis/setFileName chr_1850_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1860 keV
+/analysis/setFileName chr_1860_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1870 keV
+/analysis/setFileName chr_1870_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1880 keV
+/analysis/setFileName chr_1880_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1890 keV
+/analysis/setFileName chr_1890_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1900 keV
+/analysis/setFileName chr_1900_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1910 keV
+/analysis/setFileName chr_1910_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1920 keV
+/analysis/setFileName chr_1920_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1930 keV
+/analysis/setFileName chr_1930_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1940 keV
+/analysis/setFileName chr_1940_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1950 keV
+/analysis/setFileName chr_1950_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1960 keV
+/analysis/setFileName chr_1960_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1970 keV
+/analysis/setFileName chr_1970_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1980 keV
+/analysis/setFileName chr_1980_keV.root
+/run/beamOn 1000000
+
+/gps/energy 1990 keV
+/analysis/setFileName chr_1990_keV.root
+/run/beamOn 1000000
+
+/gps/energy 2000 keV
+/analysis/setFileName chr_2000_keV.root
+/run/beamOn 1000000
+

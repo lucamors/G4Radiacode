@@ -3,6 +3,7 @@
 
 #include "G4VHit.hh"
 #include "G4THitsCollection.hh"
+#include <string>
 
 class G4RadiacodeHit : public G4VHit
 {
@@ -26,9 +27,13 @@ class G4RadiacodeHit : public G4VHit
     void SetEdep(G4double edep){ fEdep = edep; };
     G4double GetEdep(){ return fEdep; };
 
+    void SetProcessName(std::string pname){ fProcessName = pname; };
+    std::string GetProcessName(){ return fProcessName; };
+
   private:
 
     G4double fEdep;
+    std::string fProcessName;
 };
 
 using G4RadiacodeHitsCollection = G4THitsCollection<G4RadiacodeHit>;

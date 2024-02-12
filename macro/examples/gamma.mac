@@ -5,9 +5,10 @@
 /run/initialize
 
 /gps/particle gamma
-/gps/position 0 0 -5 cm
+/gps/position 0 0 -2.5 cm
 /gps/energy 661.5 keV
 /gps/ang/type iso
+/gps/ang/mintheta 165.9637 deg
 /analysis/setFileName csgamma.root
-/run/printProgress 1000
-/run/beamOn 100000000
+/run/printProgress 10000
+/run/beamOn 1000000
