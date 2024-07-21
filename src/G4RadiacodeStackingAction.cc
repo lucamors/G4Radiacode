@@ -23,11 +23,6 @@ G4ClassificationOfNewTrack G4RadiacodeStackingAction::ClassifyNewTrack(const G4T
         return fKill;
     }   
 
-    // G4cout << track->GetDefinition()->GetParticleName() 
-    //        << " " 
-    //        << track->GetCreatorModelName()
-    //        << G4endl;
-
     return fUrgent;
 }
 

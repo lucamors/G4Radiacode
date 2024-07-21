@@ -50,15 +50,7 @@ void G4RadiacodeEventAction::EndOfEventAction(const G4Event* event)
     edep += (*hit_collection_of_this_event)[i]->GetEdep();
   }
 
-  // if(edep > 500 and edep < 600)
-  // {
-  //   for (long i = 0; i < hit_collection_size; i++)
-  //   {
-  //     G4cout << "PNAME : " << i << " : " << (*hit_collection_of_this_event)[i]->GetProcessName() << G4endl;
-  //   }
-  // }
-
-  // G4cout << "====================================" << G4endl;
+ 
   auto fAnalysisManager = G4AnalysisManager::Instance();
   fAnalysisManager->FillNtupleDColumn(0,0,edep);
   fAnalysisManager->AddNtupleRow(0);

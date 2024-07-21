@@ -1,10 +1,7 @@
 /*
- Tissue Equivalent Proportional Counter - Geant4 Application
- --------------------------------------------------------------
- Based on :
-"The microdosimetric extension in TOPAS: Development and
- comparison with published data" Zhu et al. 2019
-
+ Radiacode Geant4 Model
+ ------------------------
+ Radiacode 103
 */
 
 // Geant4 core libs
@@ -24,6 +21,7 @@
 #include "G4RadiacodeEventAction.hh"
 
 // STL libs
+#include <memory>
 #include <random>
 #include <ctime>
 #include <chrono>
@@ -34,13 +32,15 @@ int main(int argc, char** argv)
     G4UIExecutive * ui = 0;
     if(argc == 1)
     {
-    ui = new G4UIExecutive(argc, argv);
+        ui = new G4UIExecutive(argc, argv);
     }
 
     // Choose the random engine
     G4Random::setTheEngine(new CLHEP::RanecuEngine);
+    
     // Initialize SEED using current time since epoch
     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+
     // Set HepRandom with time dependent seed --> Needed for Cloud Parallelization
     CLHEP::HepRandom::setTheSeed(seed);
     G4Random::setTheSeed(seed);
@@ -51,29 +51,24 @@ int main(int argc, char** argv)
     // Set Mandatory initialization classes
     // ---------------------------------------------------------------------------
 
-    G4RadiacodeDetectorConstruction * det  = new G4RadiacodeDetectorConstruction();
-
+    G4RadiacodeDetectorConstruction * det = new G4RadiacodeDetectorConstruction();
+    runManager->SetUserInitialization(det);
 
     G4RadiacodePhysicsList  * phys = new G4RadiacodePhysicsList();
-
-    // auto physicsList = new QGSP_BIC_HP;
-    // physicsList->SetVerboseLevel(10);
-    // runManager->SetUserInitialization(physicsList);
-
-
-    runManager->SetUserInitialization(det);
     runManager->SetUserInitialization(phys);
 
     // Set action classes
     // ---------------------------------------------------------------------------
-    G4RadiacodePrimaryGeneratorAction * gen   = new G4RadiacodePrimaryGeneratorAction();
-    G4RadiacodeRunAction              * run   = new G4RadiacodeRunAction();
-    G4RadiacodeEventAction            * event = new G4RadiacodeEventAction();
-    G4RadiacodeStackingAction         * stack = new G4RadiacodeStackingAction();
-
+    G4RadiacodePrimaryGeneratorAction * gen = new G4RadiacodePrimaryGeneratorAction();
     runManager->SetUserAction(gen);
+
+    G4RadiacodeRunAction * run = new G4RadiacodeRunAction();
     runManager->SetUserAction(run);
+
+    G4RadiacodeEventAction * event = new G4RadiacodeEventAction();
     runManager->SetUserAction(event);
+
+    G4RadiacodeStackingAction * stack = new G4RadiacodeStackingAction();
     runManager->SetUserAction(stack);
 
     // Initialize Geant4 Kernel
@@ -103,9 +98,7 @@ int main(int argc, char** argv)
     // Terminate application
     // All user action and initialization classes are freed by the runManager
     // so they should not be deleted in the main() program
-    //delete ui;
     delete visManager;
-
     delete runManager;
     
     return 0;
