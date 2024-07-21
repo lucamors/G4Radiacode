@@ -4,12 +4,18 @@
 
 A Geant4 implamentation of the scintillator crystal inside the Radiacode detector.
 
+![alt text](docs/exp_vs_simulation.jpg)
+Comparison between experimental measurement using a <sup>60</sup>Co source and the Geant4 simulation.
+
+To compare the Monte Carlo simulation output with laboratory measurements, the detector's FWHM calibration curve must be applied to Gaussian smearing of the output.
+
+Discrepancies between the model and measurements in the 100-400 keV range arise from backscattering events. The simulation only includes the detector, not the surrounding environment, preventing accurate reproduction of these events.
+
 ### Prerequisites
 
 > [!WARNING]  
 > In order to correctly compile this application you need both the Geant4 libraries (v. 4.11.2) and the ROOT libraries already installed on your system. 
 
-A few lines on installation
 
 ### Compile the application
 
