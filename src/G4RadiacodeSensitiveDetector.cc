@@ -19,14 +19,14 @@ G4RadiacodeSensitiveDetector::G4RadiacodeSensitiveDetector(const G4String& name,
 
 G4RadiacodeSensitiveDetector::~G4RadiacodeSensitiveDetector()
 {
-
+	// fHitsCollection will be freed by the G4RunManager
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 void G4RadiacodeSensitiveDetector::Initialize(G4HCofThisEvent* hitCollectionOfEvent)
 {
-  // Create a Hit Collection
+  // Create an Hit Collection
   fHitsCollection = new G4RadiacodeHitsCollection(SensitiveDetectorName, collectionName[0]);
 
   auto HCID = G4SDManager::GetSDMpointer()->GetCollectionID(collectionName[0]);
@@ -42,7 +42,7 @@ G4bool G4RadiacodeSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistor
 {
 
 	// Create an hit object
-	G4RadiacodeHit * hit = new G4RadiacodeHit();
+	G4RadiacodeHit * hit = new G4RadiacodeHit(); 
 	G4double edep = step->GetTotalEnergyDeposit()/CLHEP::keV;
 
 	std::string pname = step->GetTrack()->GetCreatorModelName();
@@ -53,8 +53,6 @@ G4bool G4RadiacodeSensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistor
 		hit->SetProcessName(pname);
 		fHitsCollection->insert(hit);
 	}
-
-
 
 	return true;
 }

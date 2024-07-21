@@ -4,8 +4,6 @@
 
 G4RadiacodeRunAction::G4RadiacodeRunAction() : G4UserRunAction()
 {
-  //
-
   fAnalysisManager = G4AnalysisManager::Instance();
 
   fAnalysisManager->SetVerboseLevel(1);
@@ -17,10 +15,7 @@ G4RadiacodeRunAction::G4RadiacodeRunAction() : G4UserRunAction()
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-G4RadiacodeRunAction::~G4RadiacodeRunAction()
-{
-  delete fAnalysisManager;
-}
+G4RadiacodeRunAction::~G4RadiacodeRunAction(){}
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 

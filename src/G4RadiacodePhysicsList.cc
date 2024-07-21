@@ -16,8 +16,7 @@ G4RadiacodePhysicsList::G4RadiacodePhysicsList() : G4VModularPhysicsList()
   // EM 3
   RegisterPhysics(new G4EmStandardPhysics_option3());
 
-   G4HadronicParameters::Instance()->SetTimeThresholdForRadioactiveDecay( 5.0e+2*CLHEP::year );
-
+   G4HadronicParameters::Instance()->SetTimeThresholdForRadioactiveDecay( 5.0e+3*CLHEP::year );
 
 }
 

@@ -17,6 +17,7 @@ set(
   macro/examples/characteristic.mac
   macro/examples/co60.mac
   macro/examples/cs137.mac
+  macro/examples/am241.mac
 )
 
 foreach(_script ${G4Radiacode})
